@@ -1,0 +1,115 @@
+:root{
+    --principal: #71689d;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+
+body{
+    background: rgb(29, 28, 28);
+    padding: 10px;
+    height: 90%;
+}
+
+
+.formulario{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid var(--principal);
+}
+
+.interface{
+    width: 380px;
+    position: relative;
+    padding: 15px;
+    margin-bottom: 150px;
+    padding-top: 40px;
+}
+
+ .seta{
+    position: absolute;
+}
+
+form{
+    display: flex;
+    max-width: 500px;
+    margin: 0;
+    flex-direction: column;
+    border: 2px solid var(--principal);
+    border-radius: 20px;
+    padding: 10px 5px;
+}
+
+form h1{
+    text-align: center;
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+input, textarea{
+    background-color: rgba(0, 0, 0, 0.103);
+    border: 2px solid var(--principal);
+    padding: 15px;
+    width: 100%;
+    margin: 4px 0;
+    border-radius: 10px;
+    font-size: 16px;
+    margin-bottom: 6.5px;
+    outline: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+textarea{
+    resize: none;
+}
+
+
+form .btn-enviar, .voltar{
+    background: var(--principal);
+    color: #fff;
+    font-weight: 500;
+    font-size: 20px;
+    cursor: pointer;
+    transition: .5s;
+    margin-top: 5px;
+    border: none;
+    
+}
+
+form .btn-enviar:hover, .voltar:hover{
+    transform: scale(1.02);
+    background: rgb(84, 77, 122);
+    box-shadow: 0 0 10px rgba(138, 129, 187, 0.747);
+}
+
+button a{
+    text-decoration: none;
+    padding: 15px;
+}
+
+input::placeholder, textarea::placeholder{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffffa6;
+}
+
+footer{
+    text-align: center;
+    padding-top: 20px;
+    line-height: 20px;
+}
+
+footer a{
+    text-decoration: none;
+}
+  
+footer a:hover{
+    text-decoration: underline;
+    color: var(--principal);
+}

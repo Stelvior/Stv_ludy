@@ -1,0 +1,135 @@
+:root{
+    --principal: #812d5f;
+    }
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    user-select: none;
+    color: white;
+}
+
+body{
+    max-width: 800px;
+    min-width: 220px;
+    margin: auto;
+    background: url(backgroun-carta.jpg);
+}
+
+.interface-geral{
+    padding: 10px;
+
+}
+
+.borda{
+    border: 2px solid var(--principal);
+    border-radius: 20px;
+    padding: 10px;
+    position: relative;
+    overflow: hidden;
+    backdrop-filter: blur(40px);
+    display: none;
+}
+
+.btn-ler{
+    position: fixed;
+    background: rgb(0, 0, 0);
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99999;
+
+}
+
+button{
+    padding: 10px 30px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    background: rgba(0, 0, 0, 0);
+    border: 2px solid var(--principal);
+    color: var(--principal);
+    font-weight: 550;
+    font-size: 1.4em;
+    box-shadow: 0 0 8px var(--principal);
+    cursor: pointer;
+    transition: .4s;
+}
+
+button:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 20px var(--principal);
+}
+
+.btn-fechar{
+    text-shadow: 0 0 10px white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: var(--principal);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+}
+
+#close{
+    color: white;
+}
+
+header{
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+header h1{
+    font-size: 25px;
+}
+
+header h2{
+    font-size: 14px;
+    margin-top: -12px;
+}
+
+p{
+    word-spacing: 2px;
+    text-indent: 15px;
+    margin: 15px 4px;
+    line-height: 1.5;
+    font-size: 12pt;
+}
+
+
+
+.audio{
+    background: #835e74;
+    border-radius: 20px;
+}
+
+.audio h2{
+    background: #812d5f;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 3px 0 5px 15px;
+}
+
+audio{
+    margin: 10px 0 10px 5px;
+}
+
+.txt-audio{
+    padding: 0 0 0 5px;
+    margin: 6px;
+    color: rgb(255, 255, 255);
+}
+
+

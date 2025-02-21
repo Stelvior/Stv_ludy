@@ -1,0 +1,228 @@
+
+/*EstilizaÇão geral*/ 
+    :root{
+        --principal: #71689d;
+    }
+
+    body{
+        background: rgb(0, 0, 0);
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        max-width: 790px;
+        min-width: 280px;
+        margin: auto;
+    }
+
+    ul i{
+        color: white;
+        margin-right: 5px;
+        font-size: 2em;
+        padding-top: 3px;
+    }
+
+    p{
+        word-spacing: 2px;
+        padding: 0px 10px;
+    }
+    
+    strong{
+        color: var(--principal);
+    }
+/*Fim da estilização geral*/
+
+
+/* Estilo do header*/
+header{
+    display: flex;
+    padding: 8px;
+    max-width: 100%;
+    min-width: 280px;
+    justify-content: space-between;
+}
+
+header img{
+    border: 3px solid var(--principal);
+    border-radius: 50%;
+}
+
+
+
+.btn-abrir{
+    
+    height: 50px;
+}
+
+.btn-abrir i{
+    font-size: 2.5em;
+    color: var(--principal);
+    padding: 6px 9px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+/*fim etilo do header*/
+
+.titulo{
+    padding: 0 10px;
+    margin-top: -20px;
+}
+
+.titulo h1{
+    font-size: 30px;
+    
+}
+
+.titulo h2{
+    margin-top: -20px;
+    font-size: 27px;
+    color: var(--principal);
+}
+
+
+/*Estilo do menu*/
+.menu{
+    background: #000000;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    position: fixed;
+    z-index: 99999;
+    width: 0%;
+    overflow: hidden;
+    transition: .4s;
+}
+
+.menu.abrir-menu{
+    width: 70%;
+}
+
+.menu.abrir-menu ~ .overlay-menu{
+    display: block;
+}
+
+.menu nav ul{
+    text-align: right;
+    list-style-type: none;
+}
+
+.menu nav ul a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    padding: 10px;
+}
+
+nav ul li{
+    padding: 20px 40px;
+    margin: -14px 0;
+    margin-left: -40px;
+    transition: .2s;
+    
+}
+
+nav ul li:hover{
+    background: var(--principal);
+    color: rgb(255, 255, 255);
+}
+
+.menu i{
+    font-size: 50px;
+    color: rgb(112, 82, 196);
+    padding: 15px 4%;
+    margin-bottom: -20px;
+    cursor: pointer;
+}
+
+.overlay-menu{
+    background: #000000af;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 88888;
+    display: none;
+    transition: .2s;
+}
+
+/* Fim estilo do header*/
+
+
+
+ /*estilo do main*/   
+main{
+   justify-content: space-around;
+   align-items: center;
+   padding-top: 10px;
+   max-width: 1000px;
+   min-height: 320px;
+   margin-bottom: 50px;
+   margin: auto;
+
+
+}
+
+main p{
+    line-height: 1.4;
+}
+
+main .txt p{
+    max-width: 750px;
+    padding: 0 15px;
+    text-indent: 10px;
+    font-size: 12pt;
+}
+
+main .txt h1{
+    font-size: 24px;
+    background-image: linear-gradient(to right, var(--principal), transparent);
+    padding: 4px 0 4px 7px;
+    margin: 10px 7px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+main .imagem{
+    padding: 25px;
+}
+
+/* Fim estilo do main*/
+
+
+/*Estilos do footer*/
+footer{
+   
+    padding: 10px;
+}
+
+footer .cima{
+    border-top: 2px solid var(--principal);
+    padding: 10px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}    
+
+footer .cima p{
+    margin: 0;
+}
+
+footer i{
+    color: var(--principal);
+    font-size: 2.6em;
+    transition: .4s;
+}
+
+footer i:hover{
+    transform: scale(1.2);
+    text-shadow: 0 0 10px var(--principal);
+}
+
+.txtp{
+    color: var(--principal);
+    padding-top: 10px;
+}
+
+/*apanhados*/
+.img{
+    margin: 20px;
+}
